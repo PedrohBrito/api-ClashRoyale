@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 dotenv.config();
-const serverPort = process.env.PORT || 4005;
+const serverPort = process.env.SERVER_PORT || 3001;
 
 app.get("/", (req,res)=> {
     res.send("servidor funcionando")
